@@ -16,8 +16,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class Logic {
+
     private ArrayList<String> textFileList = new ArrayList<>();
-    
+
     public void readFile() throws FileNotFoundException, IOException {
         List<String> lines;
         lines = Collections.emptyList();
@@ -27,7 +28,7 @@ public class Logic {
         for (int i = 0; i < lines.size(); i++) {
             arr = lines.get(i).split(" ");
             for (int j = 0; j < arr.length; j++) {
-                
+
                 if (!arr[j].isEmpty()) {
                     arr[j] = arr[j].replaceAll("(?:--|[\\/-_,.():;!*{}?<>])", "");
                     if (!arr[j].isEmpty()) {
@@ -37,5 +38,9 @@ public class Logic {
             }
         }
         System.out.println("job complete");
+        for (int k = 0; k < arr.length; k++) {
+            SelectionSort.selectionSort(arr);
+            System.out.println(textFileList);
+        }
     }
 }
