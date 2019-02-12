@@ -37,5 +37,16 @@ public class Logic {
             }
         }
         System.out.println("job complete");
+        InsertionSort sort = new InsertionSort();
+        ArrayList<String> shortList = new ArrayList<>();
+        shortList.add("f");
+        shortList.add("c");
+        shortList.add("b");
+        shortList.add("a");
+        shortList.add("d");
+        shortList.add("e");
+        
+        //sort.sort(textFileList);
+        sort.sort(shortList);
     }
 }

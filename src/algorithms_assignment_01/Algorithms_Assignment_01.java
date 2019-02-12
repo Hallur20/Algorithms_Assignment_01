@@ -8,5 +8,7 @@ public class Algorithms_Assignment_01 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         Logic l = new Logic();
        l.readFile();
+       //InsertionSort insertionSort = new InsertionSort();
+       
     }
 }
