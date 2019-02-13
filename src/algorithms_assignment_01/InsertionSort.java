@@ -40,7 +40,7 @@ public class InsertionSort {
                         fileArr.set((j + 1), holder);
                     }
                 }
-                System.out.println("we're at: " + i + " out of: " + fileArr.size());
+                //System.out.println("we're at: " + i + " out of: " + fileArr.size());
             }
         }
         watch.stop();

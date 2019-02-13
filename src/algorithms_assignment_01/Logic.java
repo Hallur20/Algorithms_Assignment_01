@@ -29,7 +29,7 @@ public class Logic {
             for (int j = 0; j < arr.length; j++) {
                 
                 if (!arr[j].isEmpty()) {
-                    arr[j] = arr[j].replaceAll("(?:--|[\\/-_,.():;!*{}?<>])", "");
+                    arr[j] = arr[j].replaceAll("(?:--|[\\/#$-_,.()`:;!*{}~|\"?<>&'c])", "");
                     if (!arr[j].isEmpty()) {
                         textFileList.add(arr[j].toLowerCase());
                     }
