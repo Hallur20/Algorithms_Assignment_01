@@ -5,6 +5,7 @@
  */
 package algorithms_assignment_01;
 
+import com.sun.org.apache.bcel.internal.generic.Select;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -38,9 +39,11 @@ public class Logic {
             }
         }
         System.out.println("job complete");
-        for (int k = 0; k < arr.length; k++) {
-            SelectionSort.selectionSort(arr);
-            System.out.println(textFileList);
+        //Using the selectionSort
+        SelectionSort.selectionSort(textFileList);
+        for (int k = 0; k < textFileList.size(); k++) {
+            System.out.println(textFileList.get(k));
         }
+
     }
 }

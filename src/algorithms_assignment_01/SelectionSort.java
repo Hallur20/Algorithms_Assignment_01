@@ -6,7 +6,8 @@
 package algorithms_assignment_01;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.concurrent.TimeUnit;
+import org.apache.commons.lang3.time.StopWatch;
 
 /**
  *
@@ -14,54 +15,33 @@ import java.util.Collections;
  */
 public class SelectionSort {
 
-    public static void selectionSort(String[] array) {
-
-        for (int j = 0; j < array.length - 1; j++) {
-            int min = j;
-            for (int k = j + 1; k < array.length; k++) {
-                if (array[k].compareTo(array[min]) < 0) {
-                    min = k;
+    static void selectionSort(ArrayList<String> list) {
+        StopWatch sw = new StopWatch();
+        sw.start();
+        for (int i = 0; i < list.size(); i++) {
+            String smallest = list.get(i);
+            int smallestIndex = i;
+            for (int j = i; j < list.size(); j++) {
+                String value = list.get(j);
+                if (value.compareTo(smallest) < 0) {
+                    smallest = value;
+                    smallestIndex = j;
                 }
             }
-            String temp = array[j];
-            array[j] = array[min];
-            array[min] = temp;
-        }
-    }
-
-}
-
-/*
-    public static void sort(ArrayList<String> textList) {
-        System.out.println(textList);
-        int i;
-        int j;
-        int minValue;
-        int minIndex;
-
-        for (i = 0; i < textList.size(); i++) {
-            System.out.println(textList.get(i));
-            char iLetter = (textList.get(i).charAt(0));
-            int iValue = (int) iLetter;
-            minValue = iValue;
-            minIndex = i;
-            for (j = i; j < textList.size(); j++) {
-                char jLetter = textList.get(j).charAt(0);
-                int jValue = (int) jLetter;
-                if (jValue < minValue) {
-                    minValue = jValue;
-                    minIndex = j;
-                }
-            }
-            if (minValue < iValue) {
-                Collections.swap(textList, i, minIndex);
-                //textList.set(i, textList.set(minIndex, textList.get(i)));
+            if (smallestIndex != i) {
+                String head = list.get(i);
+                list.set(i, smallest);
+                list.set(smallestIndex, head);
             }
         }
-        System.out.println(textList);
-    }
+        sw.stop();
+        //geting timer
+        System.out.println("time" + " " + sw.getTime());
+        System.out.println("Minutes" + " " + sw.getTime(TimeUnit.MINUTES));
+        System.out.println("Secounds" + " " + sw.getTime(TimeUnit.SECONDS));
+        System.out.println("Millesecoind" + " " + sw.getTime(TimeUnit.MILLISECONDS));
+        System.out.println("Microsecounds" + " " + sw.getTime(TimeUnit.MICROSECONDS));
+        System.out.println("Nanosecounds" + " " + sw.getTime(TimeUnit.NANOSECONDS));
 
+    }
 }
- */
-// if (names.get(l).compareTo(names.get(max)) > 1) {
-             //   max = l;
