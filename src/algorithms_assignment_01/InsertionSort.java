@@ -1,6 +1,8 @@
 package algorithms_assignment_01;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class InsertionSort {
 
@@ -10,9 +12,10 @@ public class InsertionSort {
         //    System.out.println(fileArr.get(i));
         //}
         /*
-        if return is negative, the sequence is correct, wrong is positive.
+        if return is negative, the sequence is correct, sequence is not correct if return is positive.
          */
-
+        StopWatch watch = new StopWatch();
+        watch.start();
         for (int i = 0; i < fileArr.size(); i++) {
             //System.out.println("i is: " + i);
             if (i + 1 >= fileArr.size()) {
@@ -40,23 +43,18 @@ public class InsertionSort {
                 System.out.println("we're at: " + i + " out of: " + fileArr.size());
             }
         }
-        System.out.println("after:");
+        watch.stop();
         for (int i = 0; i < fileArr.size(); i++) {
             System.out.println(fileArr.get(i));
         }
+        System.out.println("hours: " + watch.getTime(TimeUnit.HOURS));
+        System.out.println("minutes: " + watch.getTime(TimeUnit.MINUTES));
+        System.out.println("seconds: " + watch.getTime(TimeUnit.SECONDS));
+        System.out.println("milliseconds: " + watch.getTime(TimeUnit.MILLISECONDS));
+        System.out.println("microseconds: " + watch.getTime(TimeUnit.MICROSECONDS));
+        System.out.println("nanoseconds: " + watch.getTime(TimeUnit.NANOSECONDS));
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*public void copyPaste(ArrayList<String> arr) {
         int n = arr.size();
 

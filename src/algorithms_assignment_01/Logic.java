@@ -36,17 +36,20 @@ public class Logic {
                 }
             }
         }
+        System.out.println(textFileList.size());
         System.out.println("job complete");
         InsertionSort sort = new InsertionSort();
-        ArrayList<String> shortList = new ArrayList<>();
-        shortList.add("f");
-        shortList.add("c");
-        shortList.add("b");
-        shortList.add("a");
-        shortList.add("d");
-        shortList.add("e");
+        /*ArrayList<String> shortList = new ArrayList<>();
+        shortList.add("aaaaab");
+        shortList.add("aaaaaa");
+        shortList.add("aaaaaa");
+        shortList.add("aaax");
+        shortList.add("aaaaak");
+        shortList.add("aaaaap");
+        shortList.add("aaaaac");*/
         
         //sort.sort(textFileList);
-        sort.sort(shortList);
+        sort.sort(textFileList);
+    
     }
 }
