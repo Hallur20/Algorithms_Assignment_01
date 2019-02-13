@@ -5,6 +5,8 @@
  */
 package algorithms_assignment_01;
 
+import org.apache.commons.lang3.time.StopWatch;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -27,7 +29,7 @@ public class Logic {
         for (int i = 0; i < lines.size(); i++) {
             arr = lines.get(i).split(" ");
             for (int j = 0; j < arr.length; j++) {
-                
+
                 if (!arr[j].isEmpty()) {
                     arr[j] = arr[j].replaceAll("(?:--|[\\/-_,.():;!*{}?<>])", "");
                     if (!arr[j].isEmpty()) {
@@ -36,6 +38,12 @@ public class Logic {
                 }
             }
         }
-        System.out.println("job complete");
-    }
-}
+        StopWatch watch =  new StopWatch();
+        watch.start();
+
+        ArrayList<String> arr2 = MergeSort.mergesort(textFileList);
+        watch.stop();
+        System.out.println(watch.getTime());
+
+    }}
+
