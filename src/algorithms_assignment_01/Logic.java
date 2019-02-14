@@ -15,6 +15,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class Logic {
 
@@ -40,7 +41,7 @@ public class Logic {
         }
         System.out.println(textFileList.size());
         System.out.println("job complete");
-        InsertionSort sort = new InsertionSort();
+
         /*ArrayList<String> shortList = new ArrayList<>();
         shortList.add("aaaaab");
         shortList.add("aaaaaa");
@@ -49,15 +50,22 @@ public class Logic {
         shortList.add("aaaaak");
         shortList.add("aaaaap");
         shortList.add("aaaaac");*/
-        
-        //sort.sort(textFileList);
+        //sort.sort(textFileList);        
+        InsertionSort sort = new InsertionSort();
         sort.sort(textFileList);
-   
+
         //Using selectionSort on the list
         SelectionSort.selectionSort(textFileList);
         for (int k = 0; k < textFileList.size(); k++) {
             System.out.println(textFileList.get(k));
         }
+        //Merge sorting 
+        StopWatch watch = new StopWatch();
+        watch.start();
+
+        ArrayList<String> arr2 = MergeSort.mergesort(textFileList);
+        watch.stop();
+        System.out.println(watch.getTime());
 
     }
 }
