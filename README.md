@@ -40,17 +40,17 @@ avgcase: O(N*(log(N)) - O(822287 * log(822287)) = 1.199.421 times.<br/>
 <p>The result is the same in all cases, because  whatever you do with the Merge Sort algorithm you can't slip from checking every element in the list, that's why it have the same number of complexity in all cases.</p>
 	
 <h3>Insertion</h3>
-worstcase:O(n^2) O(822287^2) = 676.155.910.369 times
-avgcase:O(n^2) O(822287^2) = 676.155.910.369 times
-bestcase:O(n) O(822287) = 8222287 times
+worstcase:O(n^2) O(822287^2) = 676.155.910.369 times<br/>
+avgcase:O(n^2) O(822287^2) = 676.155.910.369 times<br/>
+bestcase:O(n) O(822287) = 8222287 times<br/>
 
 the reason that worst case is in power of 2
 
  bestcase: avgcase:
 <h3>Selection</h3>
 
-worstcase: O(n2) O(8222872^2) = 676155910369<br/>
-avgcase:O(n2) O(8222872^2) = 676155910369<br/>
-bestcase:O(n2) O(8222872^2) = 676155910369<br/>
+worstcase: O(n2) O(8222872^2) = 676155910369 times<br/>
+avgcase:O(n2) O(8222872^2) = 676155910369 times<br/>
+bestcase:O(n2) O(8222872^2) = 676155910369 times<br/>
 
 The result is the same in all cases, because  whatever you do with the selection Sort algorithm you can't slip from checking every element in the list, that's why it have the same number of complexity in all cases.
