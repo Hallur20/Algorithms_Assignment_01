@@ -3,10 +3,10 @@ package algorithms_assignment_01;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Algorithms_Assignment_01 {
+public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        Logic l = new Logic();
+        FileReaderLogic l = new FileReaderLogic();
 
        l.readFile();
        //InsertionSort insertionSort = new InsertionSort();
