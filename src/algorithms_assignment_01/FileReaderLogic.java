@@ -50,11 +50,13 @@ public class FileReaderLogic {
         shortList.add("aaaaak");
         shortList.add("aaaaap");
         shortList.add("aaaaac");*/
-        //sort.sort(textFileList);        
+        //sort.sort(textFileList);  
+        
+        //Insertion sort
         InsertionSort sort = new InsertionSort();
         sort.sort(textFileList);
 
-        //Using selectionSort on the list
+        //SelectionSort
         SelectionSort.selectionSort(textFileList);
         for (int k = 0; k < textFileList.size(); k++) {
             System.out.println(textFileList.get(k));
