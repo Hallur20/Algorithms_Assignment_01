@@ -39,7 +39,7 @@ public class Logic {
             }
         }
         System.out.println("job complete");
-        //Using the selectionSort
+        //Using selectionSort on the list
         SelectionSort.selectionSort(textFileList);
         for (int k = 0; k < textFileList.size(); k++) {
             System.out.println(textFileList.get(k));
