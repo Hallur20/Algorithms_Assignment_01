@@ -15,9 +15,7 @@ import org.apache.commons.lang3.time.StopWatch;
  */
 public class SelectionSort {
 
-    static void selectionSort(ArrayList<String> list) {
-        StopWatch sw = new StopWatch();
-        sw.start();
+    public void selectionSort(ArrayList<String> list) {
         for (int i = 0; i < list.size(); i++) {
             String smallest = list.get(i);
             int smallestIndex = i;
@@ -34,14 +32,5 @@ public class SelectionSort {
                 list.set(smallestIndex, head);
             }
         }
-        sw.stop();
-        //geting timer
-        System.out.println("time" + " " + sw.getTime());
-        System.out.println("Minutes" + " " + sw.getTime(TimeUnit.MINUTES));
-        System.out.println("Secounds" + " " + sw.getTime(TimeUnit.SECONDS));
-        System.out.println("Millesecoind" + " " + sw.getTime(TimeUnit.MILLISECONDS));
-        System.out.println("Microsecounds" + " " + sw.getTime(TimeUnit.MICROSECONDS));
-        System.out.println("Nanosecounds" + " " + sw.getTime(TimeUnit.NANOSECONDS));
-
     }
 }
