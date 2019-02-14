@@ -1,5 +1,9 @@
 # Algorithms_Assignment_01
 
+<h1>This project is made by: Hallur vid Neyst, Murched Kayed, Mohammad Saad</h1>
+
+<p>In order to run the project, first you need to have jdk 8</p>
+
 Measure time consumtion for each algorithm and compare them , and discuss the result in a one page summary.
 
 merge: 3.539 sekunder
