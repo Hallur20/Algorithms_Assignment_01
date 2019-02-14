@@ -2,23 +2,43 @@
 
 <h1>This project is made by: Hallur vid Neyst, Murched Kayed, Mohammad Saad</h1>
 
-<p>In order to run the project, first you need to have jdk 8</p>
+<p>In order to run the project, first you need to have jdk8 + their desired environment paths,
+	and an IDE such as netbeans or IntelliJ</p>
+	
+<p>the project already contains the needed file necessary for the sorting, all you have to do is
+to go to the main java class and run it. You will get 3 diffirent options to write in the terminal: </p>
+	<ul>
+		<li>
+		insert
+		</li>
+		<li>
+		selection
+		</li>
+		<li>
+		merge
+		</li>
+</ul>
 
-Measure time consumtion for each algorithm and compare them , and discuss the result in a one page summary.
+<h2>Measurement and conclusion</h2>
 
-merge: 3.539 sekunder
+<p>In our experiences the time consumption have been these:</p>
+<ul>
+	<li>merge: 3.539 seconds</li>
+	<li>insertion: 99 minutes</li>
+	<li>selection: 143 minutes</li>
+</ul>
 
-insertion: 99 minutter
+<p>The total length of the array that contains the file-data is : 822287 (this was after we removed unnessacery punctuations)</p>
+<p> We have also discussed what the worst/best/average cases are for these algorithms and the given array from the file.</p>
+<p>In complexity, the (n) represents the size of the array which in our case is 822287.</p>
 
-selection: 143 minutter
-
-længden er : 822287
-
-merge:
-	worstcase:, bestcase: avgcase:
+<h3>Merge</h3>
+worstcase:
+bestcase:
+avgcase:
 O(N*(log(N)) - O(822287 * log(822287)) = 1.199.421 times.
 	
-
+<h3>Insertion</h3>
 insertion:
 	worstcase:(O(n^2)) O(822287^2) = 676.155.910.369 times
 avgcase:(O(n^2)) O(822287^2) = 676.155.910.369 times
@@ -27,13 +47,12 @@ bestcase:(O(n)) O(822287) = 8222287 times
 the reason that worst case is in power of 2
 
  bestcase: avgcase:
-
-selection sort:
+<h3>Selection</h3>
 
 Worst complexity: O(n2)
 Average complexity:O(n2)
-Best Complexity: O(n2
- (n) is the the size of the array which is 822287.
+Best Complexity: O(n2)
+ 
 
 Worst complexity: 8222872 = 676155910369
 
