@@ -44,9 +44,9 @@ worstcase:O(n^2) O(822287^2) = 676.155.910.369 times<br/>
 avgcase:O(n^2) O(822287^2) = 676.155.910.369 times<br/>
 bestcase:O(n) O(822287) = 8222287 times<br/>
 
-the reason that worst case is in power of 2
+the reason that worst case is in power of 2 is because if the array was reversed, it would take the double amount of time to sort.
+the reason that best case is 'n' is because if the array is already sorted, it would take as long time as the length of the array. 
 
- bestcase: avgcase:
 <h3>Selection</h3>
 
 worstcase: O(n2) O(8222872^2) = 676155910369 times<br/>
