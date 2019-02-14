@@ -32,7 +32,9 @@ Best Complexity: O(n2
  (n) is the the size of the array which is 822287.
 
 Worst complexity: 8222872 = 676155910369
+
 Average complexity: 8222872 = 676155910369
+
 Best Complexity: 8222872 676155910369
 
 The result is the same in all cases, because  whatever you do with the selection Sort algorithm you can't slip from checking every element in the list, that's why it have the same number of complexity in all cases.
