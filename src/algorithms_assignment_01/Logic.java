@@ -5,6 +5,7 @@
  */
 package algorithms_assignment_01;
 
+import com.sun.org.apache.bcel.internal.generic.Select;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,8 +17,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class Logic {
+
     private ArrayList<String> textFileList = new ArrayList<>();
-    
+
     public void readFile() throws FileNotFoundException, IOException {
         List<String> lines;
         lines = Collections.emptyList();
@@ -27,7 +29,7 @@ public class Logic {
         for (int i = 0; i < lines.size(); i++) {
             arr = lines.get(i).split(" ");
             for (int j = 0; j < arr.length; j++) {
-                
+
                 if (!arr[j].isEmpty()) {
                     arr[j] = arr[j].replaceAll("(?:--|[\\/#$-_,.()`:;!*{}~|\"?<>&'c])", "");
                     if (!arr[j].isEmpty()) {
@@ -50,6 +52,12 @@ public class Logic {
         
         //sort.sort(textFileList);
         sort.sort(textFileList);
-    
+   
+        //Using selectionSort on the list
+        SelectionSort.selectionSort(textFileList);
+        for (int k = 0; k < textFileList.size(); k++) {
+            System.out.println(textFileList.get(k));
+        }
+
     }
 }
