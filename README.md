@@ -1,7 +1,7 @@
 # Algorithms_Assignment_01
 
 <h1>This project is made by: Hallur vid Neyst, Murched Kayed, Mohammad Saad</h1>
-
+<p>In this project we implemented the three algorithms: Insertsort, Selectionsort and Mergesort. These algorithms are used to sort an arraylist<String> - the ArrayList contains data from a txt.file</p>
 <p>In order to run the project, first you need to have jdk8 + their desired environment paths,
 	and an IDE such as netbeans or IntelliJ</p>
 	
