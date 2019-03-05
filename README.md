@@ -53,4 +53,6 @@ worstcase: O(n2) O(8222872^2) = 676155910369 times<br/>
 avgcase:O(n2) O(8222872^2) = 676155910369 times<br/>
 bestcase:O(n2) O(8222872^2) = 676155910369 times<br/>
 
+<h3>Conclusion</h3>
+
 The result is the same in all cases, because  whatever you do with the selection Sort algorithm you can't slip from checking every element in the list, that's why it have the same number of complexity in all cases.
